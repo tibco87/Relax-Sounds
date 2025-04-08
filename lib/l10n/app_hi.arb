@@ -1,0 +1,45 @@
+{
+    "appTitle": "नींद की आवाजें",
+    "sounds": "आवाजें",
+    "custom": "कस्टम",
+    "settings": "सेटिंग्स",
+    
+    "ocean": "समुद्र",
+    "forest": "जंगल",
+    "rain": "बारिश",
+    "night": "रात",
+    "lake": "झील",
+    "bay": "खाड़ी",
+    
+    "rainAndStorm": "बारिश और तूफान",
+    "lightRain": "हल्की बारिश",
+    "heavyRain": "भारी बारिश",
+    "thunderstorm": "आंधी",
+    "rainOnUmbrella": "छाता पर बारिश",
+    "rainOnWindow": "खिड़की पर बारिश",
+    "snow": "बर्फ",
+    "rainOnRoof": "छत पर बारिश",
+    "rainOnTent": "टेंट पर बारिश",
+    "rainOnPuddle": "पानी के छप्पर पर बारिश",
+    
+    "nature": "प्रकृति",
+    
+    "setTimer": "टाइमर सेट करें",
+    "noTimer": "कोई टाइमर नहीं",
+    "loopSound": "ध्वनि दोहराएं",
+    "editSound": "ध्वनि संपादित करें",
+    "volume": "वॉल्यूम",
+    "timer": "टाइमर",
+    "minutes": "मिनट",
+    "hours": "घंटे",
+    "cancel": "रद्द करें",
+    "save": "सेव करें",
+    
+    "premium": "प्रीमियम",
+    "restorePurchases": "खरीद बहाल करें",
+    "rateApp": "ऐप को रेट करें",
+    "shareApp": "ऐप शेयर करें",
+    "feedback": "फीडबैक",
+    "privacyPolicy": "प्राइवेसी पॉलिसी",
+    "appVersion": "ऐप वर्जन"
+} 

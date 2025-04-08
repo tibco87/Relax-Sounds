@@ -1,0 +1,45 @@
+{
+    "appTitle": "Zvuky na Spaní",
+    "sounds": "Zvuky",
+    "custom": "Vlastní",
+    "settings": "Nastavení",
+    
+    "ocean": "Oceán",
+    "forest": "Les",
+    "rain": "Déšť",
+    "night": "Noc",
+    "lake": "Jezero",
+    "bay": "Záliv",
+    
+    "rainAndStorm": "Déšť a Bouřka",
+    "lightRain": "Slabý déšť",
+    "heavyRain": "Silný déšť",
+    "thunderstorm": "Bouřka",
+    "rainOnUmbrella": "Déšť na Deštníku",
+    "rainOnWindow": "Déšť na Okně",
+    "snow": "Sníh",
+    "rainOnRoof": "Déšť na Střeše",
+    "rainOnTent": "Déšť na Stanu",
+    "rainOnPuddle": "Déšť na Kaluži",
+    
+    "nature": "Příroda",
+    
+    "setTimer": "Nastavit Časovač",
+    "noTimer": "Žádný časovač",
+    "loopSound": "Opakovat zvuk",
+    "editSound": "Upravit zvuk",
+    "volume": "Hlasitost",
+    "timer": "Časovač",
+    "minutes": "minut",
+    "hours": "hodin",
+    "cancel": "Zrušit",
+    "save": "Uložit",
+    
+    "premium": "Premium",
+    "restorePurchases": "Obnovit nákupy",
+    "rateApp": "Ohodnotit aplikaci",
+    "shareApp": "Sdílet aplikaci",
+    "feedback": "Zpětná vazba",
+    "privacyPolicy": "Ochrana osobních údajů",
+    "appVersion": "Verze aplikace"
+} 

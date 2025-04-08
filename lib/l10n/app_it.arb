@@ -1,0 +1,45 @@
+{
+    "appTitle": "Suoni per Dormire",
+    "sounds": "Suoni",
+    "custom": "Personalizza",
+    "settings": "Impostazioni",
+    
+    "ocean": "Oceano",
+    "forest": "Foresta",
+    "rain": "Pioggia",
+    "night": "Notte",
+    "lake": "Lago",
+    "bay": "Baia",
+    
+    "rainAndStorm": "Pioggia e Tempesta",
+    "lightRain": "Pioggia Leggera",
+    "heavyRain": "Pioggia Forte",
+    "thunderstorm": "Temporale",
+    "rainOnUmbrella": "Pioggia su Ombrello",
+    "rainOnWindow": "Pioggia su Finestra",
+    "snow": "Neve",
+    "rainOnRoof": "Pioggia sul Tetto",
+    "rainOnTent": "Pioggia sulla Tenda",
+    "rainOnPuddle": "Pioggia sulla Pozzanghera",
+    
+    "nature": "Natura",
+    
+    "setTimer": "Imposta timer",
+    "noTimer": "Nessun timer",
+    "loopSound": "Ripeti suono",
+    "editSound": "Modifica suono",
+    "volume": "Volume",
+    "timer": "Timer",
+    "minutes": "minuti",
+    "hours": "ore",
+    "cancel": "Annulla",
+    "save": "Salva",
+    
+    "premium": "Premium",
+    "restorePurchases": "Ripristina Acquisti",
+    "rateApp": "Valuta l'App",
+    "shareApp": "Condividi l'App",
+    "feedback": "Feedback",
+    "privacyPolicy": "Informativa sulla Privacy",
+    "appVersion": "Versione dell'App"
+} 

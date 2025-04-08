@@ -1,0 +1,40 @@
+{
+    "appTitle": "睡眠サウンド",
+    "sounds": "サウンド",
+    "custom": "カスタム",
+    "settings": "設定",
+    
+    "ocean": "海",
+    "forest": "森",
+    "rain": "雨",
+    "night": "夜",
+    "lake": "湖",
+    "bay": "湾",
+    
+    "rainAndStorm": "雨と嵐",
+    "lightRain": "小雨",
+    "heavyRain": "大雨",
+    "thunderstorm": "雷雨",
+    "rainOnUmbrella": "傘の上の雨",
+    "rainOnWindow": "窓の上の雨",
+    "snow": "雪",
+    "rainOnRoof": "屋根の上の雨",
+    "rainOnTent": "テントの上の雨",
+    "rainOnPuddle": "水たまりの雨",
+    
+    "nature": "自然",
+    
+    "setTimer": "タイマー設定",
+    "premium": "プレミアム",
+    "restorePurchases": "購入を復元",
+    "rateUs": "評価する",
+    "share": "共有",
+    "appVersion": "アプリバージョン",
+    "feedback": "フィードバック",
+    "privacyPolicy": "プライバシーポリシー",
+    
+    "minutes": "分",
+    "hours": "時間",
+    "cancel": "キャンセル",
+    "save": "保存"
+} 

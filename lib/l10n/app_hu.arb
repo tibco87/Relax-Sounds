@@ -1,0 +1,45 @@
+{
+    "appTitle": "Alvási Hangok",
+    "sounds": "Hangok",
+    "custom": "Egyéni",
+    "settings": "Beállítások",
+    
+    "ocean": "Óceán",
+    "forest": "Erdő",
+    "rain": "Eső",
+    "night": "Éjszaka",
+    "lake": "Tó",
+    "bay": "Öböl",
+    
+    "rainAndStorm": "Eső és Vihar",
+    "lightRain": "Könnyű eső",
+    "heavyRain": "Erős eső",
+    "thunderstorm": "Vihar",
+    "rainOnUmbrella": "Eső az Esernyőn",
+    "rainOnWindow": "Eső az Ablakon",
+    "snow": "Hó",
+    "rainOnRoof": "Eső a Tetőn",
+    "rainOnTent": "Eső a Sátron",
+    "rainOnPuddle": "Eső a Tócsán",
+    
+    "nature": "Természet",
+    
+    "setTimer": "Időzítő beállítása",
+    "noTimer": "Nincs időzítő",
+    "loopSound": "Hang ismétlése",
+    "editSound": "Hang szerkesztése",
+    "volume": "Hangerő",
+    "timer": "Időzítő",
+    "minutes": "perc",
+    "hours": "óra",
+    "cancel": "Mégse",
+    "save": "Mentés",
+    
+    "premium": "Prémium",
+    "restorePurchases": "Vásárlások visszaállítása",
+    "rateApp": "Értékeld az alkalmazást",
+    "shareApp": "Alkalmazás megosztása",
+    "feedback": "Visszajelzés",
+    "privacyPolicy": "Adatvédelem",
+    "appVersion": "Alkalmazás verzió"
+} 

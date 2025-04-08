@@ -1,0 +1,40 @@
+{
+    "appTitle": "Звуки для Сна",
+    "sounds": "Звуки",
+    "custom": "Свои",
+    "settings": "Настройки",
+    
+    "ocean": "Океан",
+    "forest": "Лес",
+    "rain": "Дождь",
+    "night": "Ночь",
+    "lake": "Озеро",
+    "bay": "Залив",
+    
+    "rainAndStorm": "Дождь и Гроза",
+    "lightRain": "Легкий дождь",
+    "heavyRain": "Сильный дождь",
+    "thunderstorm": "Гроза",
+    "rainOnUmbrella": "Дождь по Зонту",
+    "rainOnWindow": "Дождь по Окну",
+    "snow": "Снег",
+    "rainOnRoof": "Дождь по Крыше",
+    "rainOnTent": "Дождь по Палатке",
+    "rainOnPuddle": "Дождь по Луже",
+    
+    "nature": "Природа",
+    
+    "setTimer": "Установить Таймер",
+    "premium": "Премиум",
+    "restorePurchases": "Восстановить покупки",
+    "rateUs": "Оцените нас",
+    "share": "Поделиться",
+    "appVersion": "Версия Приложения",
+    "feedback": "Обратная связь",
+    "privacyPolicy": "Конфиденциальность",
+    
+    "minutes": "минут",
+    "hours": "часов",
+    "cancel": "Отмена",
+    "save": "Сохранить"
+} 

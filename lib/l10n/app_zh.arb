@@ -1,0 +1,40 @@
+{
+    "appTitle": "睡眠音效",
+    "sounds": "音效",
+    "custom": "自定义",
+    "settings": "设置",
+    
+    "ocean": "海洋",
+    "forest": "森林",
+    "rain": "雨声",
+    "night": "夜晚",
+    "lake": "湖泊",
+    "bay": "海湾",
+    
+    "rainAndStorm": "雨声和暴风",
+    "lightRain": "小雨",
+    "heavyRain": "大雨",
+    "thunderstorm": "雷暴",
+    "rainOnUmbrella": "雨打伞声",
+    "rainOnWindow": "雨打窗声",
+    "snow": "雪",
+    "rainOnRoof": "雨打屋顶",
+    "rainOnTent": "雨打帐篷",
+    "rainOnPuddle": "雨打水坑",
+    
+    "nature": "自然",
+    
+    "setTimer": "设置定时",
+    "premium": "高级版",
+    "restorePurchases": "恢复购买",
+    "rateUs": "评价我们",
+    "share": "分享",
+    "appVersion": "应用版本",
+    "feedback": "反馈",
+    "privacyPolicy": "隐私政策",
+    
+    "minutes": "分钟",
+    "hours": "小时",
+    "cancel": "取消",
+    "save": "保存"
+} 

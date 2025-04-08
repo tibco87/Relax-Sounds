@@ -1,0 +1,45 @@
+{
+    "appTitle": "Slaap Geluiden",
+    "sounds": "Geluiden",
+    "custom": "Aanpassen",
+    "settings": "Instellingen",
+    
+    "ocean": "Oceaan",
+    "forest": "Bos",
+    "rain": "Regen",
+    "night": "Nacht",
+    "lake": "Meer",
+    "bay": "Baai",
+    
+    "rainAndStorm": "Regen en Storm",
+    "lightRain": "Lichte regen",
+    "heavyRain": "Zware regen",
+    "thunderstorm": "Onweer",
+    "rainOnUmbrella": "Regen op Paraplu",
+    "rainOnWindow": "Regen op Raam",
+    "snow": "Sneeuw",
+    "rainOnRoof": "Regen op Dak",
+    "rainOnTent": "Regen op Tent",
+    "rainOnPuddle": "Regen op Plas",
+    
+    "nature": "Natuur",
+    
+    "setTimer": "Timer instellen",
+    "noTimer": "Geen timer",
+    "loopSound": "Geluid herhalen",
+    "editSound": "Geluid bewerken",
+    "volume": "Volume",
+    "timer": "Timer",
+    "minutes": "minuten",
+    "hours": "uren",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    
+    "premium": "Premium",
+    "restorePurchases": "Aankopen herstellen",
+    "rateApp": "App beoordelen",
+    "shareApp": "App delen",
+    "feedback": "Feedback",
+    "privacyPolicy": "Privacybeleid",
+    "appVersion": "App versie"
+} 

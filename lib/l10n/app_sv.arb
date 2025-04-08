@@ -1,0 +1,45 @@
+{
+    "appTitle": "Sömnljud",
+    "sounds": "Ljud",
+    "custom": "Anpassa",
+    "settings": "Inställningar",
+    
+    "ocean": "Ocean",
+    "forest": "Skog",
+    "rain": "Regn",
+    "night": "Natt",
+    "lake": "Sjö",
+    "bay": "Vik",
+    
+    "rainAndStorm": "Regn och Storm",
+    "lightRain": "Lätt regn",
+    "heavyRain": "Kraftigt regn",
+    "thunderstorm": "Åskväder",
+    "rainOnUmbrella": "Regn på Paraply",
+    "rainOnWindow": "Regn på Fönster",
+    "snow": "Snö",
+    "rainOnRoof": "Regn på Tak",
+    "rainOnTent": "Regn på Tält",
+    "rainOnPuddle": "Regn på Vattenpöl",
+    
+    "nature": "Natur",
+    
+    "setTimer": "Ställ in timer",
+    "noTimer": "Ingen timer",
+    "loopSound": "Upprepa ljud",
+    "editSound": "Redigera ljud",
+    "volume": "Volym",
+    "timer": "Timer",
+    "minutes": "minuter",
+    "hours": "timmar",
+    "cancel": "Avbryt",
+    "save": "Spara",
+    
+    "premium": "Premium",
+    "restorePurchases": "Återställ köp",
+    "rateApp": "Betygsätt appen",
+    "shareApp": "Dela appen",
+    "feedback": "Feedback",
+    "privacyPolicy": "Integritetspolicy",
+    "appVersion": "App version"
+} 

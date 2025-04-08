@@ -1,0 +1,45 @@
+{
+    "appTitle": "Dźwięki do Snu",
+    "sounds": "Dźwięki",
+    "custom": "Własne",
+    "settings": "Ustawienia",
+    
+    "ocean": "Ocean",
+    "forest": "Las",
+    "rain": "Deszcz",
+    "night": "Noc",
+    "lake": "Jezioro",
+    "bay": "Zatoka",
+    
+    "rainAndStorm": "Deszcz i Burza",
+    "lightRain": "Lekki deszcz",
+    "heavyRain": "Silny deszcz",
+    "thunderstorm": "Burza",
+    "rainOnUmbrella": "Deszcz na Parasolu",
+    "rainOnWindow": "Deszcz na Oknie",
+    "snow": "Śnieg",
+    "rainOnRoof": "Deszcz na Dachu",
+    "rainOnTent": "Deszcz na Namiocie",
+    "rainOnPuddle": "Deszcz na Kałuży",
+    
+    "nature": "Natura",
+    
+    "setTimer": "Ustaw timer",
+    "noTimer": "Brak timera",
+    "loopSound": "Powtórz dźwięk",
+    "editSound": "Edytuj dźwięk",
+    "volume": "Głośność",
+    "timer": "Timer",
+    "minutes": "minuty",
+    "hours": "godziny",
+    "cancel": "Anuluj",
+    "save": "Zapisz",
+    
+    "premium": "Premium",
+    "restorePurchases": "Przywróć zakupy",
+    "rateApp": "Oceń aplikację",
+    "shareApp": "Udostępnij aplikację",
+    "feedback": "Opinie",
+    "privacyPolicy": "Polityka prywatności",
+    "appVersion": "Wersja aplikacji"
+} 

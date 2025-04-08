@@ -1,0 +1,45 @@
+{
+    "appTitle": "أصوات النوم",
+    "sounds": "الأصوات",
+    "custom": "تخصيص",
+    "settings": "الإعدادات",
+    
+    "ocean": "المحيط",
+    "forest": "الغابة",
+    "rain": "المطر",
+    "night": "الليل",
+    "lake": "البحيرة",
+    "bay": "الخليج",
+    
+    "rainAndStorm": "المطر والعاصفة",
+    "lightRain": "مطر خفيف",
+    "heavyRain": "مطر غزير",
+    "thunderstorm": "عاصفة رعدية",
+    "rainOnUmbrella": "المطر على المظلة",
+    "rainOnWindow": "المطر على النافذة",
+    "snow": "الثلج",
+    "rainOnRoof": "المطر على السقف",
+    "rainOnTent": "المطر على الخيمة",
+    "rainOnPuddle": "المطر على البركة",
+    
+    "nature": "الطبيعة",
+    
+    "setTimer": "ضبط المؤقت",
+    "noTimer": "لا يوجد مؤقت",
+    "loopSound": "تكرار الصوت",
+    "editSound": "تعديل الصوت",
+    "volume": "مستوى الصوت",
+    "timer": "المؤقت",
+    "minutes": "دقائق",
+    "hours": "ساعات",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    
+    "premium": "بريميوم",
+    "restorePurchases": "استعادة المشتريات",
+    "rateApp": "قيم التطبيق",
+    "shareApp": "مشاركة التطبيق",
+    "feedback": "التعليقات",
+    "privacyPolicy": "سياسة الخصوصية",
+    "appVersion": "إصدار التطبيق"
+} 

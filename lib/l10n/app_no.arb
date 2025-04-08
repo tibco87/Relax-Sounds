@@ -1,0 +1,45 @@
+{
+    "appTitle": "Søvnlyder",
+    "sounds": "Lyder",
+    "custom": "Tilpass",
+    "settings": "Innstillinger",
+    
+    "ocean": "Hav",
+    "forest": "Skog",
+    "rain": "Regn",
+    "night": "Natt",
+    "lake": "Innsjø",
+    "bay": "Bukt",
+    
+    "rainAndStorm": "Regn og Storm",
+    "lightRain": "Lett regn",
+    "heavyRain": "Kraftig regn",
+    "thunderstorm": "Tordenvær",
+    "rainOnUmbrella": "Regn på Paraply",
+    "rainOnWindow": "Regn på Vindu",
+    "snow": "Snø",
+    "rainOnRoof": "Regn på Tak",
+    "rainOnTent": "Regn på Telt",
+    "rainOnPuddle": "Regn på Vanndam",
+    
+    "nature": "Natur",
+    
+    "setTimer": "Still inn timer",
+    "noTimer": "Ingen timer",
+    "loopSound": "Gjenta lyd",
+    "editSound": "Rediger lyd",
+    "volume": "Volum",
+    "timer": "Timer",
+    "minutes": "minutter",
+    "hours": "timer",
+    "cancel": "Avbryt",
+    "save": "Lagre",
+    
+    "premium": "Premium",
+    "restorePurchases": "Gjenopprett kjøp",
+    "rateApp": "Vurder appen",
+    "shareApp": "Del appen",
+    "feedback": "Tilbakemelding",
+    "privacyPolicy": "Personvernerklæring",
+    "appVersion": "App-versjon"
+} 

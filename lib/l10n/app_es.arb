@@ -1,0 +1,45 @@
+{
+    "appTitle": "Sonidos Relajantes",
+    "sounds": "Sonidos",
+    "custom": "Personalizar",
+    "settings": "Ajustes",
+    
+    "ocean": "Océano",
+    "forest": "Bosque",
+    "rain": "Lluvia",
+    "night": "Noche",
+    "lake": "Lago",
+    "bay": "Bahía",
+    
+    "rainAndStorm": "Lluvia y Tormenta",
+    "lightRain": "Lluvia Ligera",
+    "heavyRain": "Lluvia Fuerte",
+    "thunderstorm": "Tormenta",
+    "rainOnUmbrella": "Lluvia en Paraguas",
+    "rainOnWindow": "Lluvia en Ventana",
+    "snow": "Nieve",
+    "rainOnRoof": "Lluvia en Techo",
+    "rainOnTent": "Lluvia en Carpa",
+    "rainOnPuddle": "Lluvia en Charco",
+    
+    "nature": "Naturaleza",
+    
+    "setTimer": "Configurar temporizador",
+    "noTimer": "Sin temporizador",
+    "loopSound": "Repetir sonido",
+    "editSound": "Editar sonido",
+    "volume": "Volumen",
+    "timer": "Temporizador",
+    "minutes": "minutos",
+    "hours": "horas",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    
+    "premium": "Premium",
+    "restorePurchases": "Restaurar Compras",
+    "rateApp": "Calificar App",
+    "shareApp": "Compartir App",
+    "feedback": "Comentarios",
+    "privacyPolicy": "Política de Privacidad",
+    "appVersion": "Versión de la App"
+} 

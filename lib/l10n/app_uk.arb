@@ -1,0 +1,45 @@
+{
+    "appTitle": "Звуки для Сну",
+    "sounds": "Звуки",
+    "custom": "Власні",
+    "settings": "Налаштування",
+    
+    "ocean": "Океан",
+    "forest": "Ліс",
+    "rain": "Дощ",
+    "night": "Ніч",
+    "lake": "Озеро",
+    "bay": "Затока",
+    
+    "rainAndStorm": "Дощ і Гроза",
+    "lightRain": "Легкий дощ",
+    "heavyRain": "Сильний дощ",
+    "thunderstorm": "Гроза",
+    "rainOnUmbrella": "Дощ по Парасольці",
+    "rainOnWindow": "Дощ по Вікну",
+    "snow": "Сніг",
+    "rainOnRoof": "Дощ по Даху",
+    "rainOnTent": "Дощ по Наметі",
+    "rainOnPuddle": "Дощ по Калюжі",
+    
+    "nature": "Природа",
+    
+    "setTimer": "Встановити таймер",
+    "noTimer": "Немає таймера",
+    "loopSound": "Повторювати звук",
+    "editSound": "Редагувати звук",
+    "volume": "Гучність",
+    "timer": "Таймер",
+    "minutes": "хвилин",
+    "hours": "годин",
+    "cancel": "Скасувати",
+    "save": "Зберегти",
+    
+    "premium": "Преміум",
+    "restorePurchases": "Відновити покупки",
+    "rateApp": "Оцінити додаток",
+    "shareApp": "Поділитися додатком",
+    "feedback": "Зворотній зв'язок",
+    "privacyPolicy": "Конфіденційність",
+    "appVersion": "Версія Додатку"
+} 
