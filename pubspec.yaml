@@ -34,7 +34,6 @@ flutter:
   generate: true
   assets:
     - assets/images/
-    - assets/images/apka1.jpg
     - assets/sounds/
     - assets/icons/
     - assets/translations/ 

@@ -58,82 +58,81 @@ class SettingsScreen extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     final settingsProvider = Provider.of<SettingsProvider>(context);
 
-    return CustomScrollView(
-      slivers: [
-        SliverAppBar(
-          floating: true,
-          title: Text(
-            l10n.settings,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        ),
-        SliverList(
-          delegate: SliverChildListDelegate([
-            const SizedBox(height: 8),
-            _buildSettingsItem(
-              title: l10n.premium,
-              icon: Icons.star,
-              onTap: () {
-                // TODO: Implement premium purchase
-              },
-            ),
-            _buildSettingsItem(
-              title: l10n.restorePurchases,
-              icon: Icons.restore,
-              onTap: () {
-                // TODO: Implement restore purchases
-              },
-            ),
-            _buildSettingsItem(
-              title: l10n.rateApp,
-              icon: Icons.rate_review,
-              onTap: () {
-                // TODO: Open app store rating
-              },
-            ),
-            _buildSettingsItem(
-              title: l10n.shareApp,
-              icon: Icons.share,
-              onTap: () {
-                // TODO: Implement share functionality
-              },
-            ),
-            _buildSettingsItem(
-              title: l10n.feedback,
-              icon: Icons.feedback,
-              onTap: () {
-                // TODO: Open feedback form
-              },
-            ),
-            _buildSettingsItem(
-              title: l10n.privacyPolicy,
-              icon: Icons.privacy_tip,
-              onTap: () {
-                // TODO: Open privacy policy
-              },
-            ),
-            _buildSettingsItem(
-              title: l10n.appVersion,
-              icon: Icons.info,
-              onTap: null,
-              trailing: const Text(
-                '1.0.0',
-                style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 14,
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 16, bottom: 8),
+              child: Text(
+                l10n!.settings,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 28,
+                  shadows: [
+                    Shadow(
+                      color: Colors.black54,
+                      blurRadius: 8,
+                      offset: Offset(0, 2),
+                    ),
+                  ],
                 ),
               ),
             ),
-            const SizedBox(height: 24),
-          ]),
+            Expanded(
+              child: ListView(
+                padding: const EdgeInsets.only(top: 8, bottom: 24),
+                children: [
+                  _buildSettingsItem(
+                    title: l10n.premium,
+                    icon: Icons.star,
+                    onTap: () {},
+                  ),
+                  _buildSettingsItem(
+                    title: l10n.restorePurchases,
+                    icon: Icons.restore,
+                    onTap: () {},
+                  ),
+                  _buildSettingsItem(
+                    title: l10n.rateApp,
+                    icon: Icons.rate_review,
+                    onTap: () {},
+                  ),
+                  _buildSettingsItem(
+                    title: l10n.shareApp,
+                    icon: Icons.share,
+                    onTap: () {},
+                  ),
+                  _buildSettingsItem(
+                    title: l10n.feedback,
+                    icon: Icons.feedback,
+                    onTap: () {},
+                  ),
+                  _buildSettingsItem(
+                    title: l10n.privacyPolicy,
+                    icon: Icons.privacy_tip,
+                    onTap: () {},
+                  ),
+                  _buildSettingsItem(
+                    title: l10n.appVersion,
+                    icon: Icons.info,
+                    onTap: null,
+                    trailing: const Text(
+                      '1.0.0',
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 } 

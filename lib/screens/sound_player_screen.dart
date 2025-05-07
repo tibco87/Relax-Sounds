@@ -82,14 +82,10 @@ class _SoundPlayerScreenState extends State<SoundPlayerScreen> {
         ],
       ),
       body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Colors.teal.shade700,
-              Colors.teal.shade900,
-            ],
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/apka1.jpg'),
+            fit: BoxFit.cover,
           ),
         ),
         child: SafeArea(

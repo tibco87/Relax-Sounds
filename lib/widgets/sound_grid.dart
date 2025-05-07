@@ -1,67 +1,113 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:provider/provider.dart';
-import '../providers/sound_provider.dart';
-import '../screens/sound_player_screen.dart';
+import '../models/sound_category.dart';
+import '../screens/category_sounds_screen.dart';
 
 class SoundGrid extends StatelessWidget {
   const SoundGrid({super.key});
 
-  String _getTranslatedName(AppLocalizations l10n, String soundKey) {
-    switch (soundKey) {
-      case 'ocean': return l10n.ocean;
-      case 'rain': return l10n.rain;
-      case 'thunder': return l10n.thunderstorm;
-      case 'wind': return l10n.wind;
-      case 'fire': return l10n.fire;
-      case 'birds': return l10n.birds;
-      case 'crickets': return l10n.crickets;
-      case 'frogs': return l10n.frogs;
-      case 'night': return l10n.night;
-      case 'waves': return l10n.waves;
-      case 'stream': return l10n.stream;
-      case 'waterfall': return l10n.waterfall;
-      default: return soundKey;
+  String _getImagePath(String categoryKey) {
+    switch (categoryKey) {
+      case 'nature':
+        return 'assets/images/priroda.jpg';
+      case 'animals':
+        return 'assets/images/zvierata.jpg';
+      case 'transport':
+        return 'assets/images/doprava.jpg';
+      case 'city':
+        return 'assets/images/mesto.jpg';
+      case 'meditation':
+        return 'assets/images/meditacia.jpg';
+      case 'romance':
+        return 'assets/images/romantika.jpg';
+      case 'weather':
+        return 'assets/images/pocasie.jpg';
+      case 'noise':
+        return 'assets/images/farby.jpg';
+      case 'home':
+        return 'assets/images/domov.jpg';
+      case 'motivation':
+        return 'assets/images/motivacia.jpg';
+      case 'instruments':
+        return 'assets/images/nastroje.jpg';
+      case 'focus':
+        return 'assets/images/sustredenie.jpg';
+      case 'colors':
+        return 'assets/images/farby.jpg';
+      default:
+        return 'assets/images/priroda.jpg';
     }
   }
 
-  String _getImagePath(String soundKey) {
-    switch (soundKey) {
-      case 'ocean': return 'assets/images/ocean.jpg';
-      case 'rain': return 'assets/images/dazd.jpg';
-      case 'thunder': return 'assets/images/burka.jpg';
-      case 'wind': return 'assets/images/vietor.jpg';
-      case 'fire': return 'assets/images/ohen.jpg';
-      case 'birds': return 'assets/images/vtaky.jpg';
-      case 'crickets': return 'assets/images/farma.jpg';
-      case 'frogs': return 'assets/images/farma.jpg';
-      case 'night': return 'assets/images/night.jpg';
-      case 'waves': return 'assets/images/ocean.jpg';
-      case 'stream': return 'assets/images/les.jpg';
-      case 'waterfall': return 'assets/images/les.jpg';
-      default: return 'assets/images/les.jpg';
-    }
+  List<SoundCategory> _getCategories(AppLocalizations l10n) {
+    return [
+      SoundCategory(
+        key: 'nature',
+        name: l10n.nature,
+        icon: '🌿',
+      ),
+      SoundCategory(
+        key: 'animals',
+        name: l10n.animals,
+        icon: '🐾',
+      ),
+      SoundCategory(
+        key: 'romance',
+        name: l10n.romance,
+        icon: '💕',
+      ),
+      SoundCategory(
+        key: 'home',
+        name: l10n.home,
+        icon: '🏠',
+      ),
+      SoundCategory(
+        key: 'city',
+        name: l10n.city,
+        icon: '🏙️',
+      ),
+      SoundCategory(
+        key: 'weather',
+        name: l10n.weather,
+        icon: '⛅',
+      ),
+      SoundCategory(
+        key: 'motivation',
+        name: l10n.motivation,
+        icon: '💪',
+      ),
+      SoundCategory(
+        key: 'focus',
+        name: l10n.focus,
+        icon: '🎯',
+      ),
+      SoundCategory(
+        key: 'transport',
+        name: l10n.transport,
+        icon: '🚗',
+      ),
+      SoundCategory(
+        key: 'instruments',
+        name: l10n.instruments,
+        icon: '🎵',
+      ),
+      SoundCategory(
+        key: 'colors',
+        name: l10n.colors,
+        icon: '🎨',
+      ),
+      SoundCategory(
+        key: 'meditation',
+        name: l10n.meditation,
+        icon: '🧘',
+      ),
+    ];
   }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final soundProvider = Provider.of<SoundProvider>(context);
-    
-    final sounds = [
-      'ocean',
-      'rain',
-      'thunder',
-      'wind',
-      'fire',
-      'birds',
-      'crickets',
-      'frogs',
-      'night',
-      'waves',
-      'stream',
-      'waterfall',
-    ];
+    final categories = _getCategories(l10n);
 
     return GridView.builder(
       padding: const EdgeInsets.all(16),
@@ -70,37 +116,28 @@ class SoundGrid extends StatelessWidget {
         crossAxisSpacing: 16,
         mainAxisSpacing: 16,
       ),
-      itemCount: sounds.length,
+      itemCount: categories.length,
       itemBuilder: (context, index) {
-        final soundKey = sounds[index];
-        final translatedName = _getTranslatedName(l10n, soundKey);
-        final imagePath = _getImagePath(soundKey);
+        final category = categories[index];
         
         return GestureDetector(
-          onTap: () async {
-            await soundProvider.loadSound(soundKey);
-            if (context.mounted) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => SoundPlayerScreen(
-                    soundName: translatedName,
-                    soundKey: soundKey,
-                  ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => CategorySoundsScreen(
+                  category: category,
                 ),
-              );
-            }
+              ),
+            );
           },
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
-              image: DecorationImage(
-                image: AssetImage(imagePath),
-                fit: BoxFit.cover,
-                colorFilter: ColorFilter.mode(
-                  Colors.black.withOpacity(0.3),
-                  BlendMode.darken,
-                ),
+              color: Colors.white.withOpacity(0.1),
+              border: Border.all(
+                color: Colors.white.withOpacity(0.2),
+                width: 1,
               ),
               boxShadow: [
                 BoxShadow(
@@ -109,38 +146,40 @@ class SoundGrid extends StatelessWidget {
                   offset: const Offset(0, 5),
                 ),
               ],
+              image: DecorationImage(
+                image: AssetImage(_getImagePath(category.key)),
+                fit: BoxFit.cover,
+              ),
             ),
-            child: Stack(
-              children: [
-                Positioned.fill(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [
-                          Colors.transparent,
-                          Colors.black.withOpacity(0.7),
-                        ],
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.transparent,
+                    Colors.black.withOpacity(0.7),
+                  ],
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Text(
+                      category.name,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
                       ),
-                      borderRadius: BorderRadius.circular(16),
+                      textAlign: TextAlign.center,
                     ),
                   ),
-                ),
-                Positioned(
-                  bottom: 16,
-                  left: 16,
-                  right: 16,
-                  child: Text(
-                    translatedName,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         );

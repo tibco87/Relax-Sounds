@@ -14,24 +14,14 @@ class TimerDialog extends StatelessWidget {
       child: Container(
         height: MediaQuery.of(context).size.height * 0.8,
         decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFF1a237e), // Deep blue
-              Color(0xFF000051), // Darker blue
-            ],
+          image: const DecorationImage(
+            image: AssetImage('assets/images/apka1.jpg'),
+            fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.circular(20),
         ),
         child: Stack(
           children: [
-            // Stars background
-            Positioned.fill(
-              child: CustomPaint(
-                painter: StarryBackgroundPainter(),
-              ),
-            ),
             // Content
             Column(
               mainAxisSize: MainAxisSize.min,
@@ -164,7 +154,14 @@ class _TimerOption extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 15),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.1),
+              color: Colors.white.withOpacity(0.2),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.3),
+                  blurRadius: 8,
+                  offset: const Offset(0, 2),
+                ),
+              ],
               borderRadius: BorderRadius.circular(15),
             ),
             child: Center(
