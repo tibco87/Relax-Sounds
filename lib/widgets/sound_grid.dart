@@ -9,9 +9,9 @@ class SoundGrid extends StatelessWidget {
   String _getImagePath(String categoryKey) {
     switch (categoryKey) {
       case 'nature':
-        return 'assets/images/priroda.jpg';
+        return 'assets/images/priroda.png';
       case 'animals':
-        return 'assets/images/zvierata.jpg';
+        return 'assets/images/zvierata.png';
       case 'transport':
         return 'assets/images/doprava.jpg';
       case 'city':
@@ -19,7 +19,7 @@ class SoundGrid extends StatelessWidget {
       case 'meditation':
         return 'assets/images/meditacia.jpg';
       case 'romance':
-        return 'assets/images/romantika.jpg';
+        return 'assets/images/romantika.png';
       case 'weather':
         return 'assets/images/pocasie.jpg';
       case 'noise':
