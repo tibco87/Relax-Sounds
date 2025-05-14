@@ -28,14 +28,12 @@ class _SoundPlayerScreenState extends State<SoundPlayerScreen> {
   }
 
   Future<void> _initVolumeControl() async {
-    // Initialize volume control
     VolumeController().listener((volume) {
       if (mounted) {
         Provider.of<SoundProvider>(context, listen: false).setVolume(volume);
       }
     });
-    
-    // Get initial volume
+
     final volume = await VolumeController().getVolume();
     if (mounted) {
       Provider.of<SoundProvider>(context, listen: false).setVolume(volume);
@@ -52,7 +50,7 @@ class _SoundPlayerScreenState extends State<SoundPlayerScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final soundProvider = Provider.of<SoundProvider>(context);
-    
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -94,9 +92,7 @@ class _SoundPlayerScreenState extends State<SoundPlayerScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                const SizedBox(height: 20), // Spacing at the top
-                
-                // Volume Control Section
+                const SizedBox(height: 20),
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
@@ -132,11 +128,11 @@ class _SoundPlayerScreenState extends State<SoundPlayerScreen> {
                               ),
                               const SizedBox(width: 8),
                               Icon(
-                                soundProvider.volume > 0 
-                                  ? soundProvider.volume > 0.5
-                                    ? Icons.volume_up
-                                    : Icons.volume_down
-                                  : Icons.volume_off,
+                                soundProvider.volume > 0
+                                    ? soundProvider.volume > 0.5
+                                        ? Icons.volume_up
+                                        : Icons.volume_down
+                                    : Icons.volume_off,
                                 color: Colors.white70,
                               ),
                             ],
@@ -163,10 +159,7 @@ class _SoundPlayerScreenState extends State<SoundPlayerScreen> {
                     ],
                   ),
                 ),
-                
-                const Spacer(), // Push controls to the bottom
-                
-                // Control Buttons Row
+                const Spacer(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -181,7 +174,6 @@ class _SoundPlayerScreenState extends State<SoundPlayerScreen> {
                         size: 32,
                       ),
                     ),
-                    // Play Button
                     Container(
                       width: 100,
                       height: 100,
@@ -217,18 +209,18 @@ class _SoundPlayerScreenState extends State<SoundPlayerScreen> {
                         soundProvider.toggleFavorite(widget.soundKey);
                       },
                       child: Icon(
-                        soundProvider.isFavorite(widget.soundKey) 
-                          ? Icons.favorite 
-                          : Icons.favorite_border,
+                        soundProvider.isFavorite(widget.soundKey)
+                            ? Icons.favorite
+                            : Icons.favorite_border,
                         color: soundProvider.isFavorite(widget.soundKey)
-                          ? Colors.red
-                          : Colors.white,
+                            ? Colors.red
+                            : Colors.white,
                         size: 32,
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 40), // Bottom spacing
+                const SizedBox(height: 40),
               ],
             ),
           ),
@@ -275,4 +267,4 @@ class _GlassButton extends StatelessWidget {
       ),
     );
   }
-} 
+}

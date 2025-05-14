@@ -16,34 +16,39 @@ import 'theme/app_theme.dart';
 import 'services/supabase_service.dart';
 
 void main() async {
-  print('Starting app initialization...');
+  print('--- [DEBUG] main() started ---');
+  print('--- [DEBUG] Start app initialization ---');
   final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  print('--- [DEBUG] WidgetsFlutterBinding initialized ---');
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  print('--- [DEBUG] Splash preserved ---');
   
   try {
-    print('Loading environment variables...');
+    print('--- [DEBUG] Loading environment variables... ---');
     await dotenv.load();
-    print('Environment variables loaded successfully');
+    print('--- [DEBUG] Environment variables loaded ---');
 
-    print('Setting preferred orientations...');
+    print('--- [DEBUG] Setting preferred orientations... ---');
     await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    print('Orientations set successfully');
+    print('--- [DEBUG] Orientations set ---');
 
     if (!kIsWeb && (Platform.isIOS || Platform.isAndroid)) {
-      print('Initializing MobileAds...');
+      print('--- [DEBUG] Initializing MobileAds... ---');
       await MobileAds.instance.initialize();
-      print('MobileAds initialized successfully');
+      print('--- [DEBUG] MobileAds initialized ---');
+    } else {
+      print('--- [DEBUG] Skipping MobileAds initialization (not mobile) ---');
     }
 
-    print('Initializing Supabase...');
+    print('--- [DEBUG] Initializing Supabase... ---');
     await SupabaseService.initialize();
-    print('Supabase initialized successfully');
+    print('--- [DEBUG] Supabase initialized ---');
     
-    print('Removing splash screen...');
+    print('--- [DEBUG] Removing splash screen... ---');
     FlutterNativeSplash.remove();
-    print('Splash screen removed');
+    print('--- [DEBUG] Splash screen removed ---');
     
-    print('Starting app...');
+    print('--- [DEBUG] Starting app... ---');
     runApp(
       MultiProvider(
         providers: [
@@ -53,10 +58,10 @@ void main() async {
         child: const MyApp(),
       ),
     );
-    print('App started successfully');
+    print('--- [DEBUG] App started ---');
   } catch (e, stackTrace) {
-    print('Error during initialization: $e');
-    print('Stack trace: $stackTrace');
+    print('--- [ERROR] Error during initialization: $e ---');
+    print('--- [ERROR] Stack trace: $stackTrace ---');
     FlutterNativeSplash.remove();
     rethrow;
   }
